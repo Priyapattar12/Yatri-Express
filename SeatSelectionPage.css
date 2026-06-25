@@ -1,0 +1,102 @@
+.seat-page {
+  padding: 32px 20px 64px;
+}
+
+.seat-page-header h2 {
+  color: var(--navy);
+  margin: 0 0 4px;
+  font-size: 1.3rem;
+}
+
+.seat-page-header p {
+  color: var(--text-muted);
+  margin: 0 0 24px;
+  font-size: 0.9rem;
+}
+
+.seat-page-layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 24px;
+  align-items: start;
+}
+
+.seat-side-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: sticky;
+  top: 88px;
+}
+
+.boarding-card,
+.fare-summary {
+  padding: 20px;
+}
+
+.boarding-card h4,
+.fare-summary h4 {
+  margin: 0 0 14px;
+  color: var(--navy);
+  font-size: 0.95rem;
+}
+
+.boarding-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--grey-border);
+  font-size: 0.88rem;
+  cursor: pointer;
+}
+
+.boarding-option:last-child {
+  border-bottom: none;
+}
+
+.boarding-option span:nth-child(2) {
+  flex: 1;
+}
+
+.boarding-time {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+}
+
+.fare-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  padding: 8px 0;
+}
+
+.fare-total {
+  border-top: 1px solid var(--grey-border);
+  margin-top: 4px;
+  font-weight: 800;
+  color: var(--navy);
+  font-size: 1.05rem;
+}
+
+.seat-proceed-btn {
+  width: 100%;
+  margin-top: 14px;
+}
+
+.seat-hint {
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--accent-dark);
+  margin: 8px 0 0;
+}
+
+@media (max-width: 900px) {
+  .seat-page-layout {
+    grid-template-columns: 1fr;
+  }
+  .seat-side-panel {
+    position: static;
+  }
+}

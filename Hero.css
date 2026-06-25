@@ -1,0 +1,38 @@
+.hero {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+  padding: 48px 0 90px;
+  color: var(--white);
+}
+
+.hero-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.hero-text {
+  max-width: 640px;
+}
+
+.hero-text h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+
+.hero-accent {
+  color: #ffb37a;
+}
+
+.hero-text p {
+  font-size: 1.02rem;
+  color: #d3deee;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .hero-text h1 {
+    font-size: 1.8rem;
+  }
+}

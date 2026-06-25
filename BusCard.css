@@ -1,0 +1,119 @@
+.bus-card {
+  padding: 22px;
+}
+
+.bus-card-main {
+  display: grid;
+  grid-template-columns: 1.4fr 1.6fr 1fr 1fr;
+  align-items: center;
+  gap: 16px;
+}
+
+.bus-operator-block h3 {
+  margin: 0 0 4px;
+  font-size: 1.02rem;
+  color: var(--navy);
+}
+
+.bus-type {
+  margin: 0 0 10px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.bus-amenities {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.amenity-pill {
+  font-size: 0.72rem;
+  background: var(--grey-bg);
+  border: 1px solid var(--grey-border);
+  border-radius: 14px;
+  padding: 3px 9px;
+  color: var(--text-muted);
+}
+
+.bus-time-block {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.time-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.time {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-dark);
+}
+
+.time-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.duration-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.duration-line {
+  width: 100%;
+  height: 1px;
+  background: var(--grey-border);
+  position: relative;
+  margin-bottom: 4px;
+}
+
+.duration-text {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.bus-rating-block {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+.seats-left {
+  font-size: 0.8rem;
+  color: var(--accent-dark);
+  font-weight: 600;
+}
+
+.bus-fare-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.fare {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--navy);
+}
+
+@media (max-width: 900px) {
+  .bus-card-main {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+  .bus-fare-block {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
